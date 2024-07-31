@@ -13,7 +13,7 @@ S3_conn_id = "S3_connection"
 
 def ingest_csv(**kwargs):
     ti = kwargs['ti']
-    url = ('https://newsapi.org/v2/everything?''q=Apple&''from=2024-04-17&''sortBy=popularity&''apiKey=503f25df0ae6481e9405d4e9e5c94eb4')
+    url = ('https://newsapi.org/v2/everything?''q=Apple&''from=2024-04-17&''sortBy=popularity&''apiKey=')
     response = requests.get(url)
     data = response.json()
     articles_element = {}
